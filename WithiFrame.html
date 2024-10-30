@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clickable Areas on Image for Story Map</title>
+<style>
+  .container {
+    position: relative;
+    display: inline-block;
+    width: 500px; /* Adjust to the image width */
+  }
+  .red-box {
+    position: absolute;
+    border: 2px solid red;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.1); /* Transparent red overlay */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Image -->
+  <img src="https://vtrans.maps.arcgis.com/sharing/rest/content/items/f75162bf1a6441a8b13b0b168824b69e/data" alt="Form Image" width="100%">
+  
+  <!-- Clickable Red Boxes with Links to Story Map Sections -->
+  <a href="https://storymaps.arcgis.com/stories/2c825c90cad246a5bd4561c684ca29e7/edit#ref-n-GWYkBU" style="top: 20px; left: 50px; width: 100px; height: 50px;" class="red-box"></a>
+  <a href="#section2" style="top: 100px; left: 200px; width: 120px; height: 60px;" class="red-box"></a>
+  <a href="#section3" style="top: 250px; left: 150px; width: 80px; height: 40px;" class="red-box"></a>
+</div>
+
+<!-- Story Map Section Links (for demonstration purposes) -->
+<div id="section1" style="margin-top: 600px;"> <!-- Adjust margin to simulate Story Map spacing -->
+  <h2>Section 1</h2>
+  <p>Content for section 1.</p>
+</div>
+<div id="section2" style="margin-top: 600px;">
+  <h2>Section 2</h2>
+  <p>Content for section 2.</p>
+</div>
+<div id="section3" style="margin-top: 600px;">
+  <h2>Section 3</h2>
+  <p>Content for section 3.</p>
+</div>
+
+</body>
+</html>
